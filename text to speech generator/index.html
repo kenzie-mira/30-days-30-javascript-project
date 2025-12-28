@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
+    <title>speech to Text</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Speeh To Text Conveter</h2>
+        <div id="result"></div>
+        <div class="button-container">
+            <button onclick="startConverting()">
+                <i class="material-symbols-rounded">mic</i>
+            </button>
+
+            <button onclick="stopConverting()">
+                <i class="material-symbols-rounded">stop</i>
+            </button>
+
+            <button onclick="reset()">
+                <i class="material-symbols-rounded" id="reset-btn">undo</i>
+            </button>
+
+            <button onclick="copyText()" id="copy-btn">
+                <i class="material-symbols-rounded" id="icon1">content_copy</i>
+                <i class="material-symbols-rounded" style="display: none;" id="check">check</i>
+            </button>
+
+             <button onclick="readAloud()">
+                <i class="material-symbols-rounded" id="reset-btn">volume_up</i>
+            </button>
+
+            <p>Word Count: <span id="word-count">0</span></p>
+
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
